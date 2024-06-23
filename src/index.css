@@ -13,14 +13,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
-}
 
 .btn-primary {
   background-color: #ff8200;
@@ -39,6 +31,16 @@ a {
   background-color: #cf7d25;
   border-color: #ff8200;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 384px;
+  flex-direction: column;
+}
+
 
 .form-control:focus {
   border-color: #cf7d25;
@@ -59,4 +61,116 @@ a {
 
 .second-container {
   padding-top: 50px;
+}
+
+.accordion-body {
+  display: flex;
+  justify-content: space-around;
+  max-width: 384px;
+  color: white;
+}
+
+.accordion-body :first-child {
+  color: #ff8200;
+  font-weight: 600;
+
+}
+
+.credit{
+  color: red;
+  font-weight: 600;
+
+}
+
+.debit{
+  color:green;
+  font-weight: 600;
+
+
+}
+.accordion-body :last-child{
+  color: #ff8200;
+  font-weight: 600;
+
+}
+
+.accordion-header {
+  width: 384px;
+}
+
+.accordion-item {
+  color: black;
+}
+
+.accordion-item button {
+  color: white;
+  background-color: #ff8200;
+  width: 384px;
+}
+
+.buttonInside{
+  width: 75px;
+  background-color: red;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #ff8200;
+}
+
+.accordion-button:not(.collapsed) .fas {
+  color: #000; 
+}
+
+.button-box{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-box > button{
+  width: 50%;
+}
+
+
+.collapsed {
+  color: white;
+  background-color: #ff8200;
+}
+.header{
+  width: 100%;
+  height: 8dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > img{
+  width: 40px;
+  height: 40px;
+}
+
+.header :first-child{
+  width: 85px;
+  height: 55px;
+}
+
+#toggleSaldoButton::after {
+  display: none;
+}
+
+#toggleSaldoButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#saldoAtual {
+  margin-right: 10px;
+}
+
+#eyeIcon {
+  color: rgb(42, 41, 41);
 }
