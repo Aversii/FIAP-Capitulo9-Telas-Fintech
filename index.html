@@ -9,162 +9,54 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
     <link rel="stylesheet" href="index.css" />
-    <title>Home</title>
+    <title>Monney Matters</title>
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <img src="./assets/white pig.png" />
-        <img src="./assets/barra-de-menu.png" />
-      </header>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button"
-              type="button"
-              id="toggleSaldoButton"
-            >
-              Saldo Atual <span id="saldoAtual">********</span>
-              <i id="eyeIcon" class="fas fa-eye"></i>
-            </button>
-          </h2>
+      <img src="./assets/white-logo.png" />
+
+      <form>
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input
+            placeholder="Email"
+            type="email"
+            id="form2Example1"
+            class="form-control"
+          />
         </div>
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Meta
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-          >
-            <div class="accordion-body">
-              <p>1.800,00R$</p>
-              <p class="debit">PS4</p>
-              <p>v</p>
-            </div>
-          </div>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-          >
-            <div class="accordion-body">
-              <p>12.000,00R$</p>
-              <p class="credit">Moto</p>
-              <p>x</p>
-            </div>
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input
+            placeholder="Senha"
+            type="password"
+            id="form2Example2"
+            class="form-control"
+          />
+        </div>
+
+        <div class="row mb-4">
+          <div class="text-center">
+            <a href="#!">Esqueci minha senha</a>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Ultimas Movimentações
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-          >
-            <div class="accordion-body">
-              <p>PIX</p>
-              <p class="debit">1,200,00R$</p>
-              <p>28/02/1991</p>
-            </div>
-          </div>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-          >
-            <div class="accordion-body">
-              <p>TED</p>
-              <p class="credit">200,00R$</p>
-              <p>26/02/1991</p>
-            </div>
-          </div>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-          >
-            <div class="accordion-body">
-              <p>DOC</p>
-              <p class="credit">15,00R$</p>
-              <p>01/02/1991</p>
-            </div>
-          </div>
-          <div class="button-box">
-            <button
-              type="button"
-              data-mdb-button-init
-              data-mdb-ripple-init
-              class="btn btn-primary btn-block mb-4"
-              onclick="window.location.href='receita.html';"
 
-            >
-              Cadastrar Receita
-            </button>
-            <button
-              type="button"
-              data-mdb-button-init
-              data-mdb-ripple-init
-              class="btn btn-primary btn-block"
-              onclick="window.location.href='despesa.html';"
+        <div class="text-center">
+          <button
+            type="button"
+            data-mdb-button-init
+            data-mdb-ripple-init
+            class="btn btn-primary btn-block mb-4"
+            onclick="window.location.href='main.html';"
 
-            >
-              Cadastrar despesa
-            </button>
-          </div>
+          >
+            LOGIN
+          </button>
         </div>
-      </div>
+        <div class="text-center second-container">
+          <p class="mt-sm"><a href="signup.html">REGISTRE-SE</a></p>
+        </div>
+      </form>
     </div>
-
-    <script>
-      document
-        .getElementById("toggleSaldoButton")
-        .addEventListener("click", function () {
-          var saldo = document.getElementById("saldoAtual");
-          var eyeIcon = document.getElementById("eyeIcon");
-          if (saldo.textContent === "********") {
-            saldo.textContent = "1.500,00R$";
-            eyeIcon.classList.remove("fa-eye");
-            eyeIcon.classList.add("fa-eye-slash");
-          } else {
-            saldo.textContent = "********";
-            eyeIcon.classList.remove("fa-eye-slash");
-            eyeIcon.classList.add("fa-eye");
-          }
-        });
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
