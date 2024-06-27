@@ -113,6 +113,11 @@ a {
   background-color: red;
 }
 
+.img-icon{
+  width: 20px;
+  height: 20px;
+}
+
 .accordion-button:not(.collapsed) {
   color: white;
   background-color: #ff8200;
